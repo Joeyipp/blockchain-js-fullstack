@@ -11,6 +11,15 @@
 // Produces the same hash consistently with the same given data
 // A one-way function: data to hash
 
+// Chain Validation
+// 1. Correct block fields present (timestamp, lastHash, data, hash)
+// 2. Actual lastHash reference
+// 3. Valid Hash consisting of timestamp, data, and lasthash
+
+// Chain Replacement
+// Replace its own chain with a new chain of blocks
+// Blockchain network: All chains come to an unanimous agreement on the true longest blockchain
+
 const { GENESIS_DATA } = require('./config');
 const cryptoHash = require('./crypto-hash');
 
