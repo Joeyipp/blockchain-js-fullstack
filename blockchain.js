@@ -48,6 +48,7 @@ class Blockchain {
             if (hash !== validatedHash) return false;
 
             // Check difficulty changes in both direction never exceed 1 at a time
+            // High difficulty = slow downs the entire network
             if (Math.abs(lastDifficulty - difficulty) > 1) return false;
         }
         return true;

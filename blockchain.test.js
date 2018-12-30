@@ -66,7 +66,7 @@ describe('Blockchain', () => {
                     const timestamp = Date.now();
                     const nonce = 0;
                     const data = [];
-                    const difficulty = lastBlock.difficulty - 3; // Jumped difficulty
+                    const difficulty = lastBlock.difficulty - 3; // Jumped difficulty to too slow
                     const hash = cryptoHash(timestamp, lastHash, difficulty, nonce, data);
 
                     const badBlock = new Block({ timestamp, lastHash, hash, nonce, difficulty, data });
