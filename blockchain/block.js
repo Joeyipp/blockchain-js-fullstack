@@ -45,8 +45,8 @@
 // PoW: Deter attackers & control the rate of block being added
 
 const hexToBinary = require('hex-to-binary');
-const { GENESIS_DATA, MINE_RATE } = require('./config');
-const cryptoHash = require('./crypto-hash');
+const { GENESIS_DATA, MINE_RATE } = require('../config');
+const cryptoHash = require('../util/crypto-hash');
 
 class Block {
     // When 3 or more arguments, arrange the arguments as an object
